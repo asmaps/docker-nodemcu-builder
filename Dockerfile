@@ -11,8 +11,8 @@ USER someuser
 RUN git clone --recursive https://github.com/pfalcon/esp-open-sdk.git /opt/esp-open-sdk
 WORKDIR /opt/esp-open-sdk
 RUN make STANDALONE=y
-RUN git clone https://github.com/nodemcu/nodemcu-firmware.git /opt/nodemcu-firmware
 ENV PATH /opt/esp-open-sdk/xtensa-lx106-elf/bin:$PATH
+RUN mkdir /opt/nodemcu-firmware
 WORKDIR /opt/nodemcu-firmware
 
 ENTRYPOINT ["make"]
