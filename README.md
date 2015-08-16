@@ -5,6 +5,11 @@ Toolchain to compile NodeMCU for ESP8266 in docker.
 
 ## Usage
 
+### Install docker
+
+https://docs.docker.com/installation/ubuntulinux/
+
+
 ### Build this on your own
 
 Check out this repo, build the container and run it:
