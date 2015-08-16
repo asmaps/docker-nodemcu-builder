@@ -35,6 +35,13 @@ docker run --rm -ti -v `pwd`:/opt/nodemcu-firmware asmaps/nodemcu-builder
 docker run --rm -ti -v `pwd`:/opt/nodemcu-firmware asmaps/nodemcu-builder make clean
 ```
 
+### Flashing
+
+For flashing the container needs access to the ttyUSB device and it has to be run as root:
+```
+docker run --rm -ti --device=/dev/ttyUSB0:/dev/ttyUSB0 -v `pwd`:/opt/nodemcu-firmware -u="root" asmaps/nodemcu-builder make flash
+```
+
 
 ## Credits
 
