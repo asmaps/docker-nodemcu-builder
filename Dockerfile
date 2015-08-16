@@ -15,5 +15,4 @@ ENV PATH /opt/esp-open-sdk/xtensa-lx106-elf/bin:$PATH
 RUN mkdir /opt/nodemcu-firmware
 WORKDIR /opt/nodemcu-firmware
 
-ENTRYPOINT ["make"]
-CMD []
+CMD ["make"]

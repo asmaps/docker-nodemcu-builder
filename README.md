@@ -12,7 +12,7 @@ Check out this repo, build the container and run it:
 git clone https://github.com/asmaps/docker-nodemcu-builder.git
 docker build -t nodemcu-builder docker-nodemcu-builder
 cd <nodemcu-firmware>
-docker run --rm -v `pwd`:/opt/nodemcu-firmware nodemcu-builder
+docker run --rm -ti -v `pwd`:/opt/nodemcu-firmware nodemcu-builder
 ```
 
 ### Use pre-built docker hub version
@@ -20,5 +20,5 @@ docker run --rm -v `pwd`:/opt/nodemcu-firmware nodemcu-builder
 Run:
 ```
 cd <nodemcu-firmware>
-docker run --rm -v `pwd`:/opt/nodemcu-firmware asmaps/nodemcu-builder
+docker run --rm -ti -v `pwd`:/opt/nodemcu-firmware asmaps/nodemcu-builder
 ```
