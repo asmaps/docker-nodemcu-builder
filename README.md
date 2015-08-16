@@ -17,11 +17,19 @@ docker run --rm -ti -v `pwd`:/opt/nodemcu-firmware nodemcu-builder
 
 ### Use pre-built docker hub version
 
-Run:
+In your nodemcu-firmware directory run:
 ```
-cd <nodemcu-firmware>
 docker run --rm -ti -v `pwd`:/opt/nodemcu-firmware asmaps/nodemcu-builder
 ```
+
+`make` is the default command. If you want to run e.g. `make clean` just add it at the end:
+
+Make clean:
+```
+docker run --rm -ti -v `pwd`:/opt/nodemcu-firmware asmaps/nodemcu-builder make clean
+```
+
+### Commands
 
 ## Credits
 
