@@ -33,6 +33,6 @@ docker run --rm -ti -v `pwd`:/opt/nodemcu-firmware asmaps/nodemcu-builder make c
 
 ## Credits
 
-Thanks to (esp-open-sdk)[https://github.com/pfalcon/esp-open-sdk] which this image highly depends on.
+Thanks to [esp-open-sdk](https://github.com/pfalcon/esp-open-sdk) which this image highly depends on.
 
 And all others that are not listed here
