@@ -22,14 +22,14 @@ In your nodemcu-firmware directory run:
 docker run --rm -ti -v `pwd`:/opt/nodemcu-firmware asmaps/nodemcu-builder
 ```
 
+### Commands
+
 `make` is the default command. If you want to run e.g. `make clean` just add it at the end:
 
-Make clean:
 ```
 docker run --rm -ti -v `pwd`:/opt/nodemcu-firmware asmaps/nodemcu-builder make clean
 ```
 
-### Commands
 
 ## Credits
 
