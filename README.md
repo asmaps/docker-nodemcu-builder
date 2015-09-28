@@ -2,6 +2,8 @@
 
 Toolchain to compile NodeMCU for ESP8266 in docker.
 
+This assumes you are the user with UID 1000 (default for the first user) on your system. Compiled files etc will be created with this uid.
+
 
 ## Usage
 
